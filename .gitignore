@@ -1,0 +1,11 @@
+# contains file names not to be uploaded to github repository
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+/media
+/static
