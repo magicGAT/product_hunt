@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if error %}
+{{ error }}
+<br />
+<br />
+{% endif %}
+<h1>List A Product</h1>
+<br />
+<br />
+<br />
+
+<div align="left">
+<form method="POST" action="{% url 'login' %}" enctype="multipart/form-data">
+Name:
+<br />
+<input type="text" name="p_name" />
+<br />
+<hr>
+<br />
+Describe the Product:
+<br />
+<input type="text" name="p_text" />
+<br />
+<hr>
+<br /> 
+<input type="file" name="icon"> 
+<br />
+<hr>
+<br /> 
+<input type="file" name="image" />
+<br />
+<br />
+<br />
+<input class="btn btn-primary" type="submit" value="Add Product" />
+</form>
+</div>
+
+{% endblock %}
